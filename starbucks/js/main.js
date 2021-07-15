@@ -48,3 +48,10 @@ fadeEls.forEach((fadeEl, index) => {
     opacity: 1,
   });
 });
+
+// new Swiper(선택자, 옵션) - 공지사항 스와이퍼 기능 구현
+new Swiper(".notice-line .swiper-container", {
+  direction: "vertical", // 방향: 수직방향
+  autoplay: true, // 자동재생 여부
+  loop: true, // 반복재생 여부
+});
