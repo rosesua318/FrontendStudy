@@ -110,3 +110,14 @@ const floatingObject = (selector, delay, size) => {
 floatingObject(".floating1", 1, 15);
 floatingObject(".floating2", 0.5, 15);
 floatingObject(".floating3", 1.5, 20);
+
+/* 특정한 섹션이 화면에 나타나면 애니메이션을 실행시키기 위해 */
+const spyEls = document.querySelectorAll("section.scroll-spy");
+spyEls.forEach((spyEl) => {
+  new ScrollMagic.Scene({
+    triggerElement: spyEl, // 보여질 여부를 감시할 요소를 지정
+    triggerHook: 0.8, // 스크롤 하다가 부포트의 0.8 지점에 걸리게 되면 감시되었다고 판단되게
+  })
+    .setClassToggle(spyEl, "show")
+    .addTo(new ScrollMagic.Controller());
+});
