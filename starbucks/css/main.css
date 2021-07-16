@@ -5,7 +5,6 @@ body {
     font-weight: 400;
     line-height: 1.4;
     font-family: 'Nanum Gothic', sans-serif;
-    height: 3000px;
 }
 
 img {
@@ -655,8 +654,150 @@ header .badges .badge {
     left: 150px;
 }
 
-.youtube .floating3 {
+/* SEASON PRODUCT */
+.season-product {
+    background-image: url("../images/season_product_bg.jpg");
+}
+
+.season-product .inner {
+    height: 400px;
+}
+
+.season-product .floating3 {
     position: absolute;
-    bottom: -200px;
+    top: -200px;
     right: 0;
+}
+
+.season-product .text-group {
+    position: absolute;
+    top: 110px;
+    right: 100px;
+}
+
+.season-product .text-group .title {
+    margin-bottom: 10px;
+}
+
+.season-product .text-group .description {
+    margin-bottom: 15px;
+}
+
+.season-product .text-group .more {
+
+}
+
+
+/* RESERVE COFFEE */
+.reserve-coffee {
+    background-image: url("../images/reserve_bg.jpg");
+}
+
+.reserve-coffee .inner {
+    height: 400px;
+}
+
+.reserve-coffee .reserve-logo {
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+
+.reserve-coffee .text-group {
+    position: absolute;
+    top: 124px;
+    left: 208px;
+}
+
+.reserve-coffee .product {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+/* PICK YOUR FAVORITE */
+.pick-your-favorite {
+    background-image: url("../images/favorite_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 화면이 스크롤 되더라도 배경이미지가 같이 스크롤되지 않게*/
+    background-size: cover;
+}
+
+.pick-your-favorite .inner {
+    padding: 110px 0;
+}
+
+.pick-your-favorite .text-group {
+    margin-left: 100px;
+    display: flex;
+    width: 362px;
+    flex-wrap : wrap; /* 수평 정렬시 모자라면 줄바꿈 가능 */
+    justify-content: flex-end; /* 요소들이 영역의 우측정렬 되게*/
+}
+
+.pick-your-favorite .text-group .title {
+    margin-bottom: 40px;
+}
+
+.pick-your-favorite .text-group .description {
+    margin-bottom: 40px;
+}
+
+
+
+/* RESERVE STORE */
+.reserve-store {
+    background-image: url("../images/reserve_store_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.reserve-store .inner {
+    height: 600px;
+    display: flex;
+    justify-content: center; /* 요소가 수평 가운데 정렬 되게 */
+    align-items: center; /* 요소가 수직 가운데 정렬 되게 */
+}
+
+.reserve-store .medal {
+    width: 334px;
+    height: 334px;
+    perspective: 600px; /* 회전시에 원근감있게 회전할 수 있게*/
+}
+
+.reserve-store .medal .front, 
+.reserve-store .medal .back  {
+    width: 334px;
+    height: 334px;
+    position: absolute; /* front요소와 back요소가 서로 겹칠 수 있게*/
+    backface-visibility: hidden; /* 뒤집힌 요소는 보이지 않게 */
+    transition: 1s; /* 자연스럽게 회전하게 */
+}
+
+.reserve-store .medal .front {
+    transform: rotateY(0deg);
+}
+
+.reserve-store .medal:hover .front {
+    transform: rotateY(180deg);
+}
+
+.reserve-store .medal .back {
+    transform: rotateY(-180deg);
+}
+
+.reserve-store .medal:hover .back {
+    transform: rotateY(0deg);
+}
+
+.reserve-store .medal .back .btn {
+    position: absolute;
+    top: 240px;
+    left: 0;
+    right: 0;
+    margin: auto; /* 가운데 정렬 되게 */
 }
