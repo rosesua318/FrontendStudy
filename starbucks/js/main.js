@@ -75,6 +75,18 @@ new Swiper(".promotion .swiper-container", {
   },
 });
 
+new Swiper(".awards .swiper-container", {
+  direction: "horizontal", // 수평 슬라이드
+  autoplay: true, // 반복재생 여부
+  loop: true,
+  spaceBetween: 30, // 슬라이드 사이 여백
+  slidesPerView: 5, // 한번에 보여줄 슬라이드 개수
+  navigation: {
+    prevEl: ".awards .swiper-prev", // 이전버튼 요소 선택자
+    nextEl: ".awards .swiper-next", // 다음버튼 요소 선택자
+  },
+});
+
 const promotionEl = document.querySelector(".promotion");
 const promotionToggleBtn = document.querySelector(".toggle-promotion");
 let isHidePromotion = false;
