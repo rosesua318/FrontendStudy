@@ -1,0 +1,3 @@
+./npmtest/.cache/
+./npmtest/dist/
+./npmtest/node_modules/
