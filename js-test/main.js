@@ -326,3 +326,33 @@ console.log(amy);
 console.log(neo);
 
 */
+
+// JS 데이터
+
+// String: "", '', ``
+// Number
+// Boolean: true, false
+// undefined
+// null
+// Array: []
+// Object: {}
+
+/*
+const result = "Hello world!".indexOf("world"); // String.prototype.indexOf()
+console.log(result);
+
+//const str = "0123";
+
+console.log("0123".length);
+
+const str = "Hello world!";
+console.log(str.indexOf("hey") !== -1);
+console.log(str.slice(0, 3));
+console.log(str.replace("world", "hey"));
+
+const str2 = "thesecon@gmail.com";
+console.log(str2.match(/.+(?=@)/)[0]);
+
+const str3 = "  Hello world   ";
+console.log(str3.trim());
+*/
