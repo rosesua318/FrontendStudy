@@ -2536,7 +2536,93 @@ var _getRandom = _interopRequireDefault(require("./getRandom"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+/*
+import getType from "./getType";
+
+console.log(typeof "hello world");
+console.log(typeof 123);
+console.log(typeof true);
+console.log(typeof undefined);
+console.log(typeof null);
+console.log(typeof {});
+console.log(typeof []);
+
+console.log(getType(123));
+console.log(getType(false));
+console.log(getType(null));
+console.log(getType({}));
+console.log(getType([]));
+*/
+
+/*
+
+// 산술 연산자(arithmetic operator)
+
+console.log(1 + 2);
+console.log(5 - 7);
+console.log(3 * 4);
+console.log(10 / 2);
+console.log(7 % 5);
+
+// 할당 연산자(assignment operator)
+
+let a = 2;
+//a = a + 1;
+a += 1;
+a *= 1;
+console.log(a);
+
+*/
+
+/* 
+// 비교 연산자(comparision operator)
+
+const a = 1;
+const b = 3;
+
+console.log(a === b);
+
+function isEqual(x, y) {
+  return x === y;
+}
+
+console.log(isEqual(1, 1));
+console.log(isEqual(2, "2"));
+
+console.log(a !== b);
+console.log(a < b);
+
+*/
+
+/* 
+// 논리 연산자(logical operator)
+
+const a = 1 === 1;
+const b = "AB" === "AB";
+const c = false;
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+console.log("&&: ", a && b && c);
+console.log("||: ", a || b || c);
+console.log("!: ", !a);
+*/
+
+/*
+// 삼항 연산자(ternary operator)
+
+const a = 1 < 2;
+
+if (a) {
+  console.log("참");
+} else {
+  console.log("거짓");
+}
+
+console.log(a ? "참" : "거짓");
+*/
 
 /*
 
@@ -2802,21 +2888,20 @@ console.log(str2.match(/.+(?=@)/)[0]);
 const str3 = "  Hello world   ";
 console.log(str3.trim());
 */
-var pi = 3.14159265358979;
+
+/*
+const pi = 3.14159265358979;
 console.log(pi); // 3.14159265358979
 
-var str = pi.toFixed(2);
+const str = pi.toFixed(2);
 console.log(str); // 3.14
+console.log(typeof str); // string
 
-console.log(_typeof(str)); // string
-
-var integer = parseInt(str);
-var float = parseFloat(str);
+const integer = parseInt(str);
+const float = parseFloat(str);
 console.log(integer); // 3
-
 console.log(float); // 3.14
-
-console.log(_typeof(integer), _typeof(float)); // number number
+console.log(typeof integer, typeof float); // number number
 
 console.log("abs: ", Math.abs(-12));
 console.log("min: ", Math.min(2, 8));
@@ -2825,6 +2910,11 @@ console.log("ceil: ", Math.ceil(3.14));
 console.log("floor: ", Math.floor(3.14));
 console.log("round: ", Math.round(3.14));
 console.log("random: ", Math.random());
+*/
+var numbers = [1, 2, 3, 4];
+var fruits = ["Apple", "Banana", "Cherry"];
+console.log(numbers);
+console.log(fruits);
 },{"q":"node_modules/q/q.js","./getRandom":"getRandom.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

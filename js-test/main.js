@@ -357,6 +357,7 @@ const str3 = "  Hello world   ";
 console.log(str3.trim());
 */
 
+/*
 const pi = 3.14159265358979;
 console.log(pi); // 3.14159265358979
 
@@ -377,3 +378,71 @@ console.log("ceil: ", Math.ceil(3.14));
 console.log("floor: ", Math.floor(3.14));
 console.log("round: ", Math.round(3.14));
 console.log("random: ", Math.random());
+*/
+
+const numbers = [1, 2, 3, 4];
+const fruits = ["Apple", "Banana", "Cherry"];
+console.log(numbers[1]);
+console.log(fruits[2]);
+console.log(numbers.length);
+console.log(fruits.length);
+console.log([1, 2].length);
+
+console.log(numbers.concat(fruits));
+
+fruits.forEach(function (element, index, array) {
+  console.log(element, index, array);
+});
+
+const b = fruits.map(function (fruit, index) {
+  return `${fruits}-${index}`;
+});
+console.log(b);
+
+const a = numberes.map((number) => {
+  return number < 3;
+});
+console.log(a);
+
+const c = numbers.filter((number) => {
+  return number < 3;
+});
+console.log(c);
+
+const d = fruits.find((fruit) => {
+  return /^B/.test(fruit);
+});
+console.lolg(d);
+
+const e = fruits.findIndex((fruit) => {
+  return /^C/.test(fruit);
+});
+console.log(e);
+
+// .includes()
+const f = numbers.includes(3);
+console.log(f);
+
+const g = fruits.includes("KIM");
+console.log(g);
+
+// .push() .unshift()
+// 원본 수정됨 주의!
+numbers.push(5);
+console.log(numbers);
+
+numbers.unshift(0);
+console.log(numbers);
+
+// .reverse()
+// 원본 수정됨 주의!
+numbers.reverse();
+fruits.reverse();
+console.log(numbers);
+console.log(fruits);
+
+// .splice()
+// 원본 수정됨 주의!
+numbers.splice(2, 1);
+
+console.log(numbers);

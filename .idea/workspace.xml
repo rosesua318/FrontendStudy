@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bb0fa98-7fc0-4c23-b674-15ca59d44d95" name="Default Changelist" comment="" />
+    <list default="true" id="5bb0fa98-7fc0-4c23-b674-15ca59d44d95" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/js-test/.cache/b7/640bdfd6b8ff0722b77b203eab6366.json" beforeDir="false" afterPath="$PROJECT_DIR$/js-test/.cache/b7/640bdfd6b8ff0722b77b203eab6366.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-test/dist/main.1f19ae8e.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-test/dist/main.1f19ae8e.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-test/dist/main.1f19ae8e.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js-test/dist/main.1f19ae8e.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js-test/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-test/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
