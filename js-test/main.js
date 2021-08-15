@@ -449,6 +449,7 @@ numbers.splice(2, 1);
 console.log(numbers);
 */
 
+/*
 const userAge = {
   // key: value
   name: "Gildong",
@@ -467,3 +468,17 @@ console.log(target === userAge);
 const a = { k: 123 };
 const b = { k: 123 };
 console.log(a === b);
+*/
+
+// 구조 분해 할당
+// 비구조화 할당
+
+const user = {
+  name: "Gildong",
+  age: 85,
+  email: "thesecon@gmail.com",
+};
+
+const { name, age, email, address } = user;
+console.log(`사용자의 이름은 ${name}입니다.`);
+console.log(`${name}의 나이는 ${age}세입니다.`);
