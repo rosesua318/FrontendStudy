@@ -380,6 +380,7 @@ console.log("round: ", Math.round(3.14));
 console.log("random: ", Math.random());
 */
 
+/*
 const numbers = [1, 2, 3, 4];
 const fruits = ["Apple", "Banana", "Cherry"];
 console.log(numbers[1]);
@@ -446,3 +447,23 @@ console.log(fruits);
 numbers.splice(2, 1);
 
 console.log(numbers);
+*/
+
+const userAge = {
+  // key: value
+  name: "Gildong",
+  age: 85,
+};
+const userEmail = {
+  name: "Gildong",
+  email: "thesecon@gmail.com",
+};
+
+const target = Object.assign({}, userAge, userEmail);
+console.log(target);
+console.log(userAge);
+console.log(target === userAge);
+
+const a = { k: 123 };
+const b = { k: 123 };
+console.log(a === b);
