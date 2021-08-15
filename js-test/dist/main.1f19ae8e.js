@@ -2534,95 +2534,9 @@ var _q = require("q");
 
 var _getRandom = _interopRequireDefault(require("./getRandom"));
 
+var _console;
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/*
-import getType from "./getType";
-
-console.log(typeof "hello world");
-console.log(typeof 123);
-console.log(typeof true);
-console.log(typeof undefined);
-console.log(typeof null);
-console.log(typeof {});
-console.log(typeof []);
-
-console.log(getType(123));
-console.log(getType(false));
-console.log(getType(null));
-console.log(getType({}));
-console.log(getType([]));
-*/
-
-/*
-
-// 산술 연산자(arithmetic operator)
-
-console.log(1 + 2);
-console.log(5 - 7);
-console.log(3 * 4);
-console.log(10 / 2);
-console.log(7 % 5);
-
-// 할당 연산자(assignment operator)
-
-let a = 2;
-//a = a + 1;
-a += 1;
-a *= 1;
-console.log(a);
-
-*/
-
-/* 
-// 비교 연산자(comparision operator)
-
-const a = 1;
-const b = 3;
-
-console.log(a === b);
-
-function isEqual(x, y) {
-  return x === y;
-}
-
-console.log(isEqual(1, 1));
-console.log(isEqual(2, "2"));
-
-console.log(a !== b);
-console.log(a < b);
-
-*/
-
-/* 
-// 논리 연산자(logical operator)
-
-const a = 1 === 1;
-const b = "AB" === "AB";
-const c = false;
-
-console.log(a);
-console.log(b);
-console.log(c);
-
-console.log("&&: ", a && b && c);
-console.log("||: ", a || b || c);
-console.log("!: ", !a);
-*/
-
-/*
-// 삼항 연산자(ternary operator)
-
-const a = 1 < 2;
-
-if (a) {
-  console.log("참");
-} else {
-  console.log("거짓");
-}
-
-console.log(a ? "참" : "거짓");
-*/
 
 /*
 
@@ -2911,10 +2825,132 @@ console.log("floor: ", Math.floor(3.14));
 console.log("round: ", Math.round(3.14));
 console.log("random: ", Math.random());
 */
-var numbers = [1, 2, 3, 4];
-var fruits = ["Apple", "Banana", "Cherry"];
+
+/*
+const numbers = [1, 2, 3, 4];
+const fruits = ["Apple", "Banana", "Cherry"];
+console.log(numbers[1]);
+console.log(fruits[2]);
+console.log(numbers.length);
+console.log(fruits.length);
+console.log([1, 2].length);
+
+console.log(numbers.concat(fruits));
+
+fruits.forEach(function (element, index, array) {
+  console.log(element, index, array);
+});
+
+const b = fruits.map(function (fruit, index) {
+  return `${fruits}-${index}`;
+});
+console.log(b);
+
+const a = numberes.map((number) => {
+  return number < 3;
+});
+console.log(a);
+
+const c = numbers.filter((number) => {
+  return number < 3;
+});
+console.log(c);
+
+const d = fruits.find((fruit) => {
+  return /^B/.test(fruit);
+});
+console.lolg(d);
+
+const e = fruits.findIndex((fruit) => {
+  return /^C/.test(fruit);
+});
+console.log(e);
+
+// .includes()
+const f = numbers.includes(3);
+console.log(f);
+
+const g = fruits.includes("KIM");
+console.log(g);
+
+// .push() .unshift()
+// 원본 수정됨 주의!
+numbers.push(5);
+console.log(numbers);
+
+numbers.unshift(0);
+console.log(numbers);
+
+// .reverse()
+// 원본 수정됨 주의!
+numbers.reverse();
+fruits.reverse();
 console.log(numbers);
 console.log(fruits);
+
+// .splice()
+// 원본 수정됨 주의!
+numbers.splice(2, 1);
+
+console.log(numbers);
+*/
+
+/*
+const userAge = {
+  // key: value
+  name: "Gildong",
+  age: 85,
+};
+const userEmail = {
+  name: "Gildong",
+  email: "thesecon@gmail.com",
+};
+
+const target = Object.assign({}, userAge, userEmail);
+console.log(target);
+console.log(userAge);
+console.log(target === userAge);
+
+const a = { k: 123 };
+const b = { k: 123 };
+console.log(a === b);
+*/
+
+/*
+// 구조 분해 할당
+// 비구조화 할당
+
+const user = {
+  name: "Gildong",
+  age: 85,
+  email: "thesecon@gmail.com",
+};
+
+const { name, age, email, address } = user;
+console.log(`사용자의 이름은 ${name}입니다.`);
+console.log(`${name}의 나이는 ${age}세입니다.`);
+*/
+// 전개 연산자 (Spread)
+var fruits = ["Apple", "Banana", "Cherry"];
+console.log(fruits);
+
+(_console = console).log.apply(_console, fruits); // Apple Banana Cherry
+
+
+function toObject(a, b, c) {
+  return {
+    a: a,
+    b: b,
+    c: c
+  };
+}
+
+console.log(toObject.apply(void 0, fruits));
+/*
+a: "Apple"
+b: "Banana"
+c: "Cherry"
+*/
 },{"q":"node_modules/q/q.js","./getRandom":"getRandom.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -2943,7 +2979,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "6541" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "5229" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

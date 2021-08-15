@@ -470,6 +470,7 @@ const b = { k: 123 };
 console.log(a === b);
 */
 
+/*
 // 구조 분해 할당
 // 비구조화 할당
 
@@ -482,3 +483,24 @@ const user = {
 const { name, age, email, address } = user;
 console.log(`사용자의 이름은 ${name}입니다.`);
 console.log(`${name}의 나이는 ${age}세입니다.`);
+*/
+
+// 전개 연산자 (Spread)
+
+const fruits = ["Apple", "Banana", "Cherry"];
+console.log(fruits);
+console.log(...fruits); // Apple Banana Cherry
+
+function toObject(a, b, c) {
+  return {
+    a: a,
+    b: b,
+    c: c,
+  };
+}
+
+console.log(toObject(...fruits)); /*
+    a: "Apple"
+    b: "Banana"
+    c: "Cherry"
+*/
