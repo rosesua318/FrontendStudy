@@ -485,6 +485,7 @@ console.log(`사용자의 이름은 ${name}입니다.`);
 console.log(`${name}의 나이는 ${age}세입니다.`);
 */
 
+/*
 // 전개 연산자 (Spread)
 
 const fruits = ["Apple", "Banana", "Cherry"];
@@ -504,3 +505,11 @@ console.log(toObject(...fruits)); /*
     b: "Banana"
     c: "Cherry"
 */
+
+import _ from "lodash"; // From 'node_modules'!
+import getType from "./getType"; // getType.js
+import getRandom from "./getRandom"; // getRandom.js
+
+console.log(_.camelCase("the hello world"));
+console.log(getType([1, 2, 3]));
+console.log(getRandom(), getRandom());
