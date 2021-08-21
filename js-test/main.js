@@ -506,6 +506,7 @@ console.log(toObject(...fruits)); /*
     c: "Cherry"
 */
 
+/*
 import _ from "lodash"; // From 'node_modules'!
 import getType from "./getType"; // getType.js
 import getRandom from "./getRandom"; // getRandom.js
@@ -513,3 +514,23 @@ import getRandom from "./getRandom"; // getRandom.js
 console.log(_.camelCase("the hello world"));
 console.log(getType([1, 2, 3]));
 console.log(getRandom(), getRandom());
+*/
+
+import _ from "lodash";
+
+const usersA = [
+  { userId: "1", name: "Gildong" },
+  { userId: "2", name: "Neo" },
+];
+
+const usersB = [
+  { userId: "1", name: "Gildong" },
+  { userId: "3", name: "Amy" },
+];
+
+const usersC = usersA.concat(usersB);
+console.log("concat", usersC);
+console.log("uniqBy", _.uniqBy(usersC, "usersId"));
+
+const usersD = _.unionBy(usersA, usersB, "UsersId");
+console.log("unionBy", usersD);
