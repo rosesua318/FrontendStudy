@@ -516,6 +516,7 @@ console.log(getType([1, 2, 3]));
 console.log(getRandom(), getRandom());
 */
 
+/*
 import _ from "lodash";
 
 const usersA = [
@@ -534,3 +535,21 @@ console.log("uniqBy", _.uniqBy(usersC, "usersId"));
 
 const usersD = _.unionBy(usersA, usersB, "UsersId");
 console.log("unionBy", usersD);
+*/
+
+// JSON (JavaScript Object Notation)
+// 자바스크립트의 객체 표기법
+
+const user = {
+  name: "GILDONG",
+  age: 90,
+  emails: ["first@gmail.com", "second@gmail.com"],
+};
+console.log("user", user);
+
+const str = JSON.stringify(user);
+console.log("str", str);
+console.log(typeof str);
+
+const obj = JSON.parse(str);
+console.log("obj", obj);
