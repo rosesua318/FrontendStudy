@@ -553,3 +553,15 @@ console.log(typeof str);
 
 const obj = JSON.parse(str);
 console.log("obj", obj);
+
+// Storage
+
+localStorage.setItem("user", JSON.stringify(user));
+console.log(JSON.parse(localStorage.getItem(user)));
+// localStorage.removeItem("user");
+
+const str = localStorage.getItem("user");
+const obj = JSON.parse(str);
+obj.age = 22;
+console.log(obj);
+localStorage.setItem("user", JSON.stringify(obj));
